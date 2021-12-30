@@ -17,15 +17,21 @@ Based on the stock analysis for years 2017 and 2018, the results clearly show a 
 Using the original script vs. the refactored script yielded the same results for both 2017 and 2018 data. The major difference between the two scripts was the execution time each script took. The original script executed with a time of 1.XXX seconds. The refactored script on the other hand took a significantly shorter time to execute with a time of .1xxx seconds. See figures 3 - 6. 
 
 ##### *Figure 3 & 4. 2017 Original Elasped Time & 2017 Refactored Elapsed Time*
-![This is figure 3](VBA_Challenge_Original_2017.png) ![This is figure 4](VBA_Challenge_2017.png)
+![This is figure 3](VBA_Challenge_Original_2017.png "Figure 3") ![This is figure 4](VBA_Challenge_2017.png "Figure 4")
 
 ##### *Figure 5 & 6. 2017 Original Elasped Time & 2017 Refactored Elapsed Time*
-![This is figure 5](VBA_Challenge_Original_2018.png) ![This is figure 6](VBA_Challenge_2018.png)
+![This is figure 5](VBA_Challenge_Original_2018.png "Figure 5") ![This is figure 6](VBA_Challenge_2018.png "Figure 6")
 
 The attributing factors in the refactored script’s speed is the use of arrays and simply using one *For Loop* to run through the entire data set. To better explain the refactored script’s method, it is best to analyze where the two scripts diverge in working with the data. 
-The original script shown in figure 5 utilized two *For Loops*. The inner *j* loop collected data in the volume column for the specified stock "AY", while running through the entire data set. The outer *i* loop changed to the next stock "CISQ" and once again ran though the *j* loop sequence. In essence, this script runs through the entire data set 12 times!
+The original script shown in figure 7 utilized two *For Loops*. The inner *j* loop collected data in the volume column for the specified stock "AY", while running through the entire data set. The outer *i* loop changed to the next stock "CISQ" and once again ran though the *j* loop sequence. In essence, this script runs through the entire data set 12 times!
 
-The refactored script, meanwhile, does this differently. By utilizing *Arrays* and *If Statements* within a *For Loop* to differentiate when the stock ticker changes, as shown in figure 6, it was demonstrated that the refactored script ran through the data set only once with the same results. Original codes for both the original and refactored codes can be found here.
+##### *Figure 7. Original Script*
+![This is figure 7](VBA_Challenge_OriginalCode.png "Figure 7")
+
+The refactored script, meanwhile, does this differently. By utilizing *Arrays* and *If Statements* within a *For Loop* to differentiate when the stock ticker changes, as shown in figure 8, it was demonstrated that the refactored script ran through the data set only once with the same results. Original codes for both the original and refactored codes can be found here: [VBA_Challenge.xlsm](VBA_Challenge.xlsm)
+
+##### *Figure 8. Refactored Script*
+![This is figure 8](VBA_Challenge_RefactoredCode.png "Figure 8")
 
 ## Summary 
 ### 1.	What are the advantages or disadvantages of refactoring code?
