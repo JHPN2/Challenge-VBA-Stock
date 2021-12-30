@@ -14,7 +14,7 @@ Based on the stock analysis for years 2017 and 2018, the results clearly show a 
 ![This is figure 2](VBA_Challenge_Results_2018.png)
 
 ### Script Performance
-Using the original script vs. the refactored script yielded the same results for both 2017 and 2018 data. The major difference between the two scripts was the execution time each script took. The original script executed with a time of 1.XXX seconds. The refactored script on the other hand took a significantly shorter time to execute with a time of .1xxx seconds. See figures 3 - 6. 
+Using the original script vs. the refactored script yielded the same results for both 2017 and 2018 data. The major difference between the two scripts was the execution time each script took. The original script executed with a time greater than 1 second. The refactored script on the other hand took a significantly shorter time to execute with a time of less than 0.2 seconds. See figures 3 - 6. 
 
 ##### *Figure 3 & 4. 2017 Original Elasped Time & 2017 Refactored Elapsed Time*
 ![This is figure 3](VBA_Challenge_Original_2017.png "Figure 3") ![This is figure 4](VBA_Challenge_2017.png "Figure 4")
