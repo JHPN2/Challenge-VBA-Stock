@@ -7,7 +7,7 @@ The purpose of the analysis is to provide Steve the tools to help him analyze an
 ### 2017 v. 2018 Stock Performance
 Based on the stock analysis for years 2017 and 2018, the results clearly show a downward trend on returns for most of the listed stocks as shown on figures 1 and 2. Only two stocks, ENPH and RUN, performed with positive returns from years 2017 and 2018. 
 
-![This is a figure]
+![This is a figure](VBA_Challenge_2017.png)
 
 ### Script Performance
 Using the original script vs. the refactored script yielded the same results for both 2017 and 2018 data. The major difference between the two scripts was the execution time each script took. As shown in figure 3, the original script executed with a time of 1.XXX seconds. The refactored script on the other hand took a significantly shorter time to execute with a time of .1xxx seconds as shown in figure 4. 
